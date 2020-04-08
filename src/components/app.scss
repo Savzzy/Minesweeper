@@ -1,0 +1,23 @@
+.rootDiv {
+}
+
+.container {
+  display: flex;
+}
+
+.cells {
+  width: 30px;
+  height: 30px;
+  background-color: pink;
+  border: 1px solid salmon;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+
+.mine{
+    display: flex;
+    justify-content: center;
+}
