@@ -8,9 +8,9 @@ const gridSize = 8;
 class App extends React.Component {
   createEmptyGrid = (gridSize) => {
     var arr = new Array(gridSize);
-    console.log("consoling arr", arr);
     var grid = arr.fill().map(() => {
       return new Array(gridSize);
+      
     });
 
     grid.forEach((element, index) => {
@@ -75,20 +75,20 @@ class App extends React.Component {
       if (r !== 0 && c !== 7 && grid[r - 1][c + 1] !== "B") {
         grid[r - 1][c + 1]++;
       }
-      if (c!==0 && grid[r][c - 1] !== "B") {
+      if (c !== 0 && grid[r][c - 1] !== "B") {
         grid[r][c - 1]++;
       }
-      if (c!==7 && grid[r][c + 1] !== "B") {
+      if (c !== 7 && grid[r][c + 1] !== "B") {
         grid[r][c + 1]++;
       }
 
-      if (c!==0 && r!==7 && grid[r + 1][c - 1] !== "B") {
+      if (c !== 0 && r !== 7 && grid[r + 1][c - 1] !== "B") {
         grid[r + 1][c - 1]++;
       }
-      if (r!==7 && grid[r + 1][c] !== "B") {
+      if (r !== 7 && grid[r + 1][c] !== "B") {
         grid[r + 1][c]++;
       }
-      if (r!==7 && c!==7 && grid[r + 1][c + 1] !== "B") {
+      if (r !== 7 && c !== 7 && grid[r + 1][c + 1] !== "B") {
         grid[r + 1][c + 1]++;
       }
     }
