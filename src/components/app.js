@@ -10,7 +10,6 @@ class App extends React.Component {
     var arr = new Array(gridSize);
     var grid = arr.fill().map(() => {
       return new Array(gridSize);
-      
     });
 
     grid.forEach((element, index) => {
